@@ -1,0 +1,197 @@
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --btn-bg: #a951fc;
+  --btn-hover: #a1139a;
+}
+
+body.light-mode {
+  --bg-color: #f4f4f4;
+  --text-color: #222222;
+  --card-bg: #ffffff;
+  --btn-bg: #3498db;
+  --btn-hover: #2980b9;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  background-color: rgb(41, 0, 90);
+  background-image: url(/img/background\ roxo\ ainda\ mais\ escuro\ com\ degradê.png);
+  background-size: cover;
+  background-position: top;
+  border-radius: 0 0 100px 100px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-row {
+  flex-direction: column;
+}
+
+.container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.icon {
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(238, 167, 252, 0.5);
+}
+
+.esquerda {
+  display: flex;
+  align-items: center;
+}
+
+nav .btn,
+.esquerda .btn {
+  background-color: var(--btn-bg);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+nav .btn:hover,
+.esquerda .btn:hover {
+  background-color: var(--btn-hover);
+}
+
+main {
+  flex: 1;
+}
+
+main .container {
+  align-items: start;
+  justify-content: flex-start;
+}
+
+.produtos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.produto {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  background-image: url(/img/background\ roxo\ ainda\ mais\ escuro\ com\ degradê.png);
+  background-size: cover;
+  background-position: end;
+  text-align: center;
+  background-color: rgb(41, 0, 90);
+  color: var(--text-color);
+  color: #ffffff;
+  border-radius: 100px 100px 0 0;
+}
+
+.botao-imagem {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.botao-imagem img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.botao-imagem:hover {
+  transform: scale(1.05);
+  filter: brightness(85%);
+}
+
+.direita {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 53%;
+  transform: translateX(-50%);
+  background-color: #a951fc;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  min-width: 162px;
+  border-radius: 5px;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.submenu li a:hover {
+  background-color: #a1139a;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+}

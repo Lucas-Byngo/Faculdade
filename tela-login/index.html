@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/icon/Buff_Games.icon.ico">
+</head>
+
+<body>
+  <div class="btn">
+    <a href="/tela-principal/index.html" class="home">Home</a>
+  </div>
+
+  <div class="container">
+    <h2>Faça seu Login</h2>
+    <form method="post" id="tela-login">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="login">Login</label>
+          <input type="text" id="login">
+          <label class="erro" id="login-erro"></label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha">
+          <label class="erro" id="senha-erro"></label>
+        </div>
+      </div>
+      
+      <!-- Ações de Cadastrar e Limpar -->
+      <input type="submit" value="Cadastrar">
+      <input class="btn-limpar" type="submit" value="Limpar">
+    </form>
+    <div class="cadastro-link">Não tem um Login?<a href="/tela-cadastro/index.html">Faça seu Cadastro</a>
+    </div>
+  </div>
+  <script src="js/validacoes.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
